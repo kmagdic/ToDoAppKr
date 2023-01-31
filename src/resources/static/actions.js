@@ -39,3 +39,5 @@ function addRecordToTable(){
      var i = r.parentNode.parentNode.rowIndex;
      document.getElementById("todoTable").deleteRow(i);
    }
+
+   // novi red
