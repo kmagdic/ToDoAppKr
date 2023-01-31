@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+<br><br>
+<div class="container">
+  <h1>Supervisor</h1>
+  <table id="todoTable" class="table table-hover">
+    <thead class="table-primary">
+    <tr>
+      <th>rb.</th>
+      <th>Ime</th>
+      <th>Prezime</th>
+      <th>OIB</th>
+      <th>Uredi</th>
+      <th>Izbriši</th>
+      <th>Todo lista</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1.</td>
+      <td>Karlo</td>
+      <td>Magdić</td>
+      <td>123456789012 </td>
+      <td> <a href="#" onclick="editRow(this)"> Edit </a> </td>
+      <td> <a href="#" onclick="deleteRow(this)"> Delete </a> </td>
+      <td> <a href="#" onclick="window.location.href='employee_todo_list.html'"> View </a> </td>
+      <!-- <td> <input id="delete" type="button" value="Delete" onclick="deleteRow(this)"></td> -->
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Ivan</td>
+      <td>Sačer</td>
+      <td>123456789012 </td>
+      <td> <a href="#" onclick="editRow(this)"> Edit </a> </td>
+      <td> <a href="#" onclick="deleteRow(this)"> Delete </a> </td>
+      <td> <a href="#" onclick="viewTodoList(this)"> View </a> </td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Mona</td>
+      <td>Magdić</td>
+      <td>1234567890444 </td>
+      <td> <a href="#" onclick="editRow(this)"> Edit </a> </td>
+      <td> <a href="#" onclick="deleteRow(this)"> Delete </a> </td>
+      <td> <a href="#" onclick="viewTodoList(this)"> View </a> </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
