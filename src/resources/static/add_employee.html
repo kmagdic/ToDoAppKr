@@ -1,52 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Add employee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="actions.js"></script>
 </head>
-
 <body>
 <div class="container">
     <nav class="navbar">
-        <div class="container-fluid" style="padding:0px">
-            <div>
-                <h1>ToDo App</h1>
-            </div>
-            <div>
-                <div class="d-inline-block align-text-middle">Dr. Dražen Beli</div>
-                <img src="doctor_icon.png" alt="" width="70" height="82" />
-                <img src="doctor_icon.png" alt="" width="70" height="72" />
-            </div>
-        </div>
+        <h1>ToDo App - Add Employee</h1>
+        <img src="admin.png" alt="" width="70" height="72" />
     </nav>
 
+    <div class="col-12 col-lg-4">
+        <form>
+            <label for="fname">Ime</label><br>
+            <input class="form-control"  type="text" id="fname" name="name"> <br><!-- name se koristi kod slanja podataka na server, a id više koko bi se dohvatio taj element u JS-->
+            <label for="lname">Prezime</label><br>
+            <input class="form-control"  type="text" id="lname" name="lname"><br>
+            <label for="email">Email</label><br>
+            <input class="form-control"  type="email" id="email" name="email"> <br>
+            <label for="pass">Password</label><br>
+            <input class="form-control"  type="password" id="pass" name="pass"><br>
+            <label for="description">Opis</label><br>
+            <input class="form-control"  type="text" id="description" name="description"><br>
 
-    <p>Add employee</p>
-
-    <div class="col-12 col-lg-6">
-        <label for="firstname" class="form-label">Ime:</label>
-        <input type="text" class="form-control" id="firstname" placeholder="Unesite ime" name="firstname">
-
-        <label for="lastname" class="form-label">Prezime:</label>
-        <input type="text" class="form-control" id="lastname" placeholder="Unesite prezime" name="lastname">
-
-        <label for="email" class="form-label">E-mail:</label>
-        <input type="text" class="form-control" id="email" placeholder="E-mail" name="email">
-
-        <label for="password" class="form-label">Password:</label>
-        <input type="password" class="form-control" id="password" placeholder="Password" name="password">
-
+        </form>
         <br>
-        <button type="submit" class="btn btn-primary"  onclick = "window.location.href='employees.html'">Spremi</button>
-
+        <button class ="btn btn-primary" type="button" onclick="save()">Spremi</button>
     </div>
-
-    <!--onclick="addRecordToTable( )-->
 </div>
+
 </body>
 </html>
